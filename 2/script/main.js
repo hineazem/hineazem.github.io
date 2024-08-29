@@ -1,3 +1,4 @@
+
 // trigger to play music in the background with sweetalert
 window.addEventListener('load', () => {
     Swal.fire({
@@ -53,66 +54,39 @@ const animationTimeline = () => {
     tl.to(".container", 0.6, {
         visibility: "visible"
     })
-    .from(".zero", 0.7, {
+    .from(".one", 0.7, {
         opacity: 0,
         y: 10
     })
-    .from(".one", 0.4, {
+    .from(".two", 0.4, {
         opacity: 0,
         y: 10
     })
-    .to(".zero",
-        0.7,
-        {
-            opacity: 0,
-            y: 10
-        },
-    "+=3.5")
     .to(".one",
         0.7,
         {
             opacity: 0,
             y: 10
         },
-    "-=1")
-    .from(".two", 0.7, {
-        opacity: 0,
-        y: 10
-    })
+    "+=3.5")
     .to(".two",
         0.7,
         {
             opacity: 0,
             y: 10
         },
-    "+=3")
+    "-=1")
     .from(".three", 0.7, {
-        scale: 0.2,
         opacity: 0,
+        y: 10
     })
-    .from(".fake-btn", 0.3, {
-        scale: 0.2,
-        opacity: 0,
-    })
-    .staggerTo(
-        ".hbd-chatbox span",
-        1.5, {
-            visibility: "visible",
-        },
-        0.05
-    )
-    .to(".fake-btn", 0.1, {
-        backgroundColor: "rgb(127, 206, 248)",
-    },
-    "+=4")
-    .to(
-        ".three",
-        0.5, {
-            scale: 0.2,
+    .to(".three",
+        0.7,
+        {
             opacity: 0,
-            y: -150
+            y: 10
         },
-    "+=1")
+    "+=3")
     .from(".four", 0.7, {
         scale: 0.2,
         opacity: 0,
@@ -141,9 +115,11 @@ const animationTimeline = () => {
         },
     "+=1")
     .from(".idea-1", 0.7, ideaTextTrans)
-    .to(".idea-1", 0.7, ideaTextTransLeave, "+=2.5")
+    .to(".idea-1", 0.7, ideaTextTransLeave, "+=3.5")
     .from(".idea-2", 0.7, ideaTextTrans)
-    .to(".idea-2", 0.7, ideaTextTransLeave, "+=2.5")
+    .to(".idea-2", 0.7, ideaTextTransLeave, "+=8")
+    .from(".idea-7", 0.7, ideaTextTrans)
+    .to(".idea-7", 0.7, ideaTextTransLeave, "+=7")
     .from(".idea-3", 0.7, ideaTextTrans)
     .to(".idea-3 strong", 0.5, {
         scale: 1.2,
@@ -151,9 +127,9 @@ const animationTimeline = () => {
         backgroundColor: "rgb(21, 161, 237)",
         color: "#fff",
     })
-    .to(".idea-3", 0.7, ideaTextTransLeave, "+=2.5")
+    .to(".idea-3", 0.7, ideaTextTransLeave, "+=5")
     .from(".idea-4", 0.7, ideaTextTrans)
-    .to(".idea-4", 0.7, ideaTextTransLeave, "+=2.5")
+    .to(".idea-4", 0.7, ideaTextTransLeave, "+=3")
     .from(
         ".idea-5",
         0.7, {

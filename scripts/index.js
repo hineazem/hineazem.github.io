@@ -5,7 +5,7 @@ const canvasC = document.getElementById('c');
 
 
 const config = {
-  birthdate: 'jul 30, 2024',
+  birthdate: 'Aug 30, 2024',
   name: 'Himalaya'
 };
 
@@ -18,7 +18,7 @@ function hideEverything() {
 }
 
 hideEverything();
-
+``
 const confettiSettings = { target: 'confetti' };
 const confetti = new window.ConfettiGenerator(confettiSettings);
 confetti.render();
