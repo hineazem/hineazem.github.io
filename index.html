@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Happy Birthday Himalaya !!</title>
+  <link rel="stylesheet" href="styles/flexbox-center-container.css" media="all">
+  <link rel="stylesheet" href="styles/system-fonts.css" media="all">
+  <link rel="stylesheet" href="styles/style.css" media="all">
+  <style>
+    #celebrate-btn {
+      display: none; 
+      background-color: #FF7777; 
+      border: none;
+      border-radius: 16px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      position: absolute; /* Optional: to position the button */
+      bottom: 20px; /* Optional: adjust as needed */
+      left: 50%; /* Optional: center the button */
+      transform: translateX(-50%); /* Optional: center the button */
+    }
+    .song {
+  visibility: hidden;
+}
+    
+  </style>
+</head>
+
+<body>
+  <audio class="song" autoplay loop>
+    <source src="music/hbd.mp3">
+    </source>
+  </audio>
+
+  <canvas id="c"></canvas>
+  <canvas id="confetti"></canvas>
+  <div class="container" id="count">
+    <h1 id="head">Countdown to your birthday:</h1>
+    <ul>
+      <li><span id="day"></span> days</li>
+      <li><span id="hour"></span> hours</li>
+      <li><span id="minute"></span> minutes</li>
+      <li><span id="second"></span> seconds</li>
+    </ul>
+  </div>
+  <div id="merrywrap" class="merrywrap">
+    <canvas id="snowfall"></canvas>
+    <div class="giftbox">
+      <div class="cover">
+        <div></div>
+      </div>
+      <div class="box"></div>
+    </div>
+    <div id="frameDiv">
+    </div>
+  </div>
+  <a id="celebrate-btn" href="2/index.html">Celebrate!</a> <!-- Button added here -->
+</body>
+
+<script src="scripts/confetti.min.js" charset="utf-8"></script>
+<script src="scripts/index.js" charset="utf-8"></script>
+
+  
+</html>
