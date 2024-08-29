@@ -22,13 +22,13 @@
       font-size: 16px;
       margin: 4px 2px;
       cursor: pointer;
-      position: absolute; /* Optional: to position the button */
-      bottom: 20px; /* Optional: adjust as needed */
-      left: 50%; /* Optional: center the button */
-      transform: translateX(-50%); /* Optional: center the button */
+      position: absolute;
+      bottom: 20px; 
+      left: 50%; 
+      transform: translateX(-50%); 
     }
     .song {
-  visibility: hidden;
+      display: none; 
 }
     
   </style>
@@ -36,9 +36,12 @@
 
 <body>
   <audio class="song" autoplay loop>
-    <source src="music/hbd.mp3">
-    </source>
+    <source src="music/hbd.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
   </audio>
+  <button onclick="document.querySelector('.song').play()" hidden>Play Music</button>
+
+  
 
   <canvas id="c"></canvas>
   <canvas id="confetti"></canvas>
@@ -68,5 +71,11 @@
 <script src="scripts/confetti.min.js" charset="utf-8"></script>
 <script src="scripts/index.js" charset="utf-8"></script>
 
-  
+<script>
+  document.body.addEventListener('click', function() {
+  document.querySelector('.song').play();
+}, { once: true });  // The event listener will be removed after the first click
+
+</script>
+
 </html>

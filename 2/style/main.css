@@ -28,20 +28,20 @@ body {
   top: 20vh;
 }
 
-.one {
+.zero {
   font-size: 4.5rem;
 }
 
-.two {
+.one {
   font-size: 1.2rem;
   font-weight: lighter;
 }
 
-.three {
+.two {
   font-size: 3rem;
 }
 
-.four {
+.three {
   display: flex;
   align-items: flex-start; /* Align items to the start (top) */
   justify-content: center; /* Center items horizontally */
@@ -65,7 +65,7 @@ body {
   max-width: 600px; /* Limit the width for larger screens */
 }
 
-.four .text-box {
+.three .text-box {
   border: 3px solid #aaa;
   border-radius: 5px;
   margin: 0 auto;
@@ -73,14 +73,21 @@ body {
   position: relative;
   width: 600px;
 }
-
 .text-box p {
   margin: 0;
   text-align: left;
 }
-
 .text-box span {
   visibility: hidden;
+}
+
+.three .text-box {
+  border: 3px solid #aaa;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  width: 600px;
 }
 
 .text-box .fake-btn {
@@ -91,6 +98,32 @@ body {
   padding: .5rem 1rem;
   position: absolute;
   right: 5px;
+}
+
+.four {
+  display: flex;
+  align-items: flex-start; /* Align items to the start (top) */
+  justify-content: center; /* Center items horizontally */
+  gap: 20px; /* Space between #loveHeart and .text-box */
+  margin: 0 auto;
+  max-width: 1200px; /* Set a maximum width for the container */
+}
+.four .text-box {
+  border: 3px solid #aaa;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  width: 600px;
+}
+
+.four .text-box {
+  border: 3px solid #aaa;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  width: 600px;
 }
 
 .five p {
